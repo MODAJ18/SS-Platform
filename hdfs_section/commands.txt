@@ -1,0 +1,13 @@
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 0600 ~/.ssh/authorized_keys
+
+bin/hdfs namenode -format
+sbin/start-dfs.sh
+
+bin/hdfs dfs -mkdir /user
+bin/hdfs dfs -mkdir /user/modaj
+bin/hdfs dfs -mkdir /downloaded
+bin/hdfs dfs -put ../Extras/SemEval2015-English-Twitter-Lexicon/SemEval2015-English-Twitter-Lexicon.txt /downloaded
+
+sbin/start-yarn.sh

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+
+  <property>
+    <name>hive.server2.enable.doAs</name>
+    <value>false</value>
+    <description>
+      Setting this property to true will have HiveServer2 execute
+      Hive operations as the user making the calls to it.
+    </description>
+  </property>
+
+<property>
+    <name>hive.metastore.uris</name>
+    <value>thrift://localhost:9083</value>
+  </property>
+<property>
+    <name>spark.sql.warehouse.dir</name>
+    <value>hdfs://localhost:9000/user/hive/warehouse</value>
+  </property>
+
+
+</configuration>

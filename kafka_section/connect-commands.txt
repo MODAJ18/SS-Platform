@@ -1,0 +1,8 @@
+$KAFKA_HOME/bin/connect-standalone.sh $KAFKA_HOME/config/connect-standalone-mysql.properties $KAFKA_HOME/config/connect-mysql.properties
+$KAFKA_HOME/bin/connect-standalone.sh $KAFKA_HOME/config/connect-standalone-postgres.properties $KAFKA_HOME/config/connect-postgres.properties   
+
+$KAFKA_HOME/bin/connect-standalone.sh $KAFKA_HOME/config/connect-standalone-mongodb.properties $KAFKA_HOME/config/connect-mongodb.properties
+$KAFKA_HOME/bin/connect-standalone.sh $KAFKA_HOME/config/connect-standalone-mongodb2.properties $KAFKA_HOME/config/connect-mongodb2.properties
+
+$KAFKA_HOME/bin/connect-standalone.sh $KAFKA_HOME/config/connect-standalone-hdfs.properties $KAFKA_HOME/config/sink-hdfs3.properties
+$KAFKA_HOME/bin/connect-standalone.sh $KAFKA_HOME/config/connect-standalone5-hdfs2.properties $KAFKA_HOME/config/sink-hdfs3-2.properties

@@ -1,0 +1,6 @@
+$KAFKA_HOME/bin/zookeeper-server-start.sh $KAFKA_HOME/config/zookeeper.properties
+$KAFKA_HOME/bin/kafka-server-start.sh $KAFKA_HOME/config/server.properties
+
+confluent-hub install confluentinc/kafka-connect-jdbc:latest --component-dir $KAFKA_HOME/plugins --worker-configs $KAFKA_HOME/config/connect-standalone.properties
+confluent-hub install mongodb/kafka-connect-mongodb:1.10.0 --component-dir $KAFKA_HOME/plugins --worker-configs $KAFKA_HOME/config/connect-standalone.properties
+confluent-hub install confluentinc/kafka-connect-hdfs3:latest --component-dir $KAFKA_HOME/plugins --worker-configs $KAFKA_HOME/config/connect-standalone.properties

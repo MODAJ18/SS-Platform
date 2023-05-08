@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/modaj/Workspace/Projects/DE_Sales_Data/spark_scripts/branch_sales_sl/target/scala-2.12/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bs_sl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bs_sl$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/modaj/Workspace/Projects/DE_Sales_Data/spark_scripts/branch_sales_sl/target/scala-2.12/classes.bak[0m

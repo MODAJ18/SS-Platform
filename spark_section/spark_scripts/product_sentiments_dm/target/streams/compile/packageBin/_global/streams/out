@@ -1,0 +1,11 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/modaj/Workspace/Projects/DE_Sales_Data/spark_sect/spark_scripts/product_sentiments_dm/target/scala-2.12/de_sales-etl-data-mart-product-sentiments_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ps_dm.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/modaj/Workspace/Projects/DE_Sales_Data/spark_sect/spark_scripts/product_sentiments_dm/target/scala-2.12/classes/ps_dm.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ps_dm$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/modaj/Workspace/Projects/DE_Sales_Data/spark_sect/spark_scripts/product_sentiments_dm/target/scala-2.12/classes/ps_dm$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ps_dm$$typecreator9$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/modaj/Workspace/Projects/DE_Sales_Data/spark_sect/spark_scripts/product_sentiments_dm/target/scala-2.12/classes/ps_dm$$typecreator9$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ps_dm$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/modaj/Workspace/Projects/DE_Sales_Data/spark_sect/spark_scripts/product_sentiments_dm/target/scala-2.12/classes/ps_dm$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

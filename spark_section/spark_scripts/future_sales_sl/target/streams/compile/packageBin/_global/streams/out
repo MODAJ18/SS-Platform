@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/modaj/Workspace/Projects/DE_Sales_Data/spark_scripts/future_sales_sl/target/scala-2.12/de_sales-etl-serving-layer-future-sales_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	future_sl$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/modaj/Workspace/Projects/DE_Sales_Data/spark_scripts/future_sales_sl/target/scala-2.12/classes/future_sl$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	future_sl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/modaj/Workspace/Projects/DE_Sales_Data/spark_scripts/future_sales_sl/target/scala-2.12/classes/future_sl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

@@ -1,0 +1,7 @@
+export PROJECT_DIR=?
+export NIFI_HOME=?
+export KAFKA_HOME=?
+export HADOOP_HOME=?
+export HIVE_HOME=?
+export SPARK_HOME=?
+export CASSANDRA_HOME=?

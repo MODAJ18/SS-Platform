@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/home/modaj/Workspace/Projects/DE_Sales_Data/spark_sect/spark_scripts/ecommerce_reviews_dm/src/main/scala/er_dm.scala:4:29: object hive is not a member of package org.apache.spark.sql[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.hive.HiveContext[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/modaj/Workspace/Projects/DE_Sales_Data/spark_sect/spark_scripts/ecommerce_reviews_dm/src/main/scala/er_dm.scala:126:9: not found: value HiveContext[0m
+[0m[[0m[31merror[0m] [0m[0m        HiveContext.setConf("hive.exec.dynamic.partition", "true")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/modaj/Workspace/Projects/DE_Sales_Data/spark_sect/spark_scripts/ecommerce_reviews_dm/src/main/scala/er_dm.scala:127:9: not found: value HiveContext[0m
+[0m[[0m[31merror[0m] [0m[0m        HiveContext.setConf("hive.exec.dynamic.partition.mode", "nonstrict")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

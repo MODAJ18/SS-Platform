@@ -1,0 +1,6 @@
+export HADOOP_HOME=$HADOOP_HOME
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+
+cp $HADOOP_HOME/etc/hadoop/hdfs-site.xml $SPARK_HOME/conf/hdfs-site.xml
+cp $HADOOP_HOME/etc/hadoop/core-site.xml $SPARK_HOME/conf/core-site.xml
+cp $HIVE_HOME/conf/hive-site.xml $SPARK_HOME/conf/hive-site.xml

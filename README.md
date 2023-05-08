@@ -50,14 +50,22 @@ the platform can be broken down to three parts:
 2- Data lake and and data warehouse that are updated and added on to through the pipeline, both being appropriately prepared in partitions, with the data warehouse being composed of several data marts.
 3- Full-stack web application built with node js and angular, to visualize and analyse the data served by the pipeline.
 
--- <picture of architecture>
+<p float="left" align="center">
+  <img src="Extras/images/Architecture.png" alt="architecture" width="350" height="300">
+</p>
 
 ### Data 
-For this project, data from a superstore on Kaggle (available at the link: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final) was used to create a traditional transactional database system that includes order sales, product, customer, and location data for a hypothetical business. Additionally, an API feed was built in FastAPI and Apache Nifi to simulate a stream source of online orders and transactions using the same data.
+For this project, data containing superstore information on Kaggle (available at the link: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final) was used to create a traditional transactional database system that includes order sales, product, customer, and location data for a hypothetical business. Additionally, an API feed was built in FastAPI and Apache Nifi to simulate a stream source of online orders and transactions using the same data.
 
--- <picture of data>
-
--- <picture of ER-Diagram>
+<p float="left" align="center">
+  <img src="Extras/images/raw-data.png" alt="raw-data" width="350" height="300">
+</p>
+<p float="left" align="center">
+  <img src="Extras/images/main-data-er-model.png" alt="main-data-er-model" width="350" height="300">
+</p>
+<p float="left" align="center">
+  <img src="Extras/images/other-data-er-model.png" alt="other-data-er-model" width="350" height="300">
+</p>
 
 Customer sentiments and online perception is also incorporated by scraping relavent information from twitter on different products that the business sells, and then retrieving tweets regarding users talking about the products. 
 
@@ -70,8 +78,6 @@ Data that is not relevant to the pipeline, such as the Dojo shopping API data, i
 To simulate the need for integrating various sources into a central storage system, multiple databases were established in MySQL, PostgreSQL, and MongoDB. Each database stores one or two of the sources of data collected from web scraping, APIs, or downloads from Kaggle. The events of database inserts are then stored in Kafka as events to fulfill a change-data-capture process. By using Kafka Connect, different source connectors are utilized to automatically ingest data into Kafka topics.
 
 Kafka serves as the main ingestion layer enabling the pipeline, and serving both speed and batch layers, and creation of HDFS data lake.
-
--- <picture of different kafka topics>
 
 ### Data Storage
 
@@ -94,13 +100,33 @@ Several Tasks performed by the pipeline:
 - updating of Hive data warehouse.
 
 Most tasks are performed by the batch layer, with the speed layer being employed for necessary processing of oncoming customer orders.
+ 
+-- <yarn-batch-and-stream-pictures>
+<p float="left" align="center">
+  <img src="Extras/images/yarn-finished-jobs.png" alt="yarn-finished-jobs" width="350" height="300">
+</p>
 
 ### Web Applicaiton - BI Dashboard
 
 Node js is the framework of choosing for the backend, it fetches data from the serving layer (cassandra) and pushes it into an API for use by the frontend software. A dashboard application showcasing sections for order history, branch sales, product performance, and forecasted sales is built using angular 2 framework, in addition to several components, such as chart js, and angular material.
 
--- <web page pictures>
-
+  
+<p float="left" align="center">
+  <img src="Extras/images/webpage-main.png" alt="webpage-main" width="350" height="300">
+</p>
+<p float="left" align="center">
+  <img src="Extras/images/webpage-oh.png" alt="webpage-oh" width="350" height="300">
+</p>
+<p float="left" align="center">
+  <img src="Extras/images/webpage-bs.png" alt="ebpage-bs" width="350" height="300">
+</p>
+<p float="left" align="center">
+  <img src="Extras/images/webpage-pp.png" alt="webpage-pp" width="350" height="300">
+</p>
+<p float="left" align="center">
+  <img src="Extras/images/webpage-fs.png" alt="webpage-fs" width="350" height="300">
+</p>
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
   

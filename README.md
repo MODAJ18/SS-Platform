@@ -51,7 +51,7 @@ the platform can be broken down to three parts:
 3- Full-stack web application built with node js and angular, to visualize and analyse the data served by the pipeline.
 
 <p float="left" align="center">
-  <img src="Extras/images/Architecture.png" alt="architecture" width="850" height="400">
+  <img src="Extras/images/Architecture.png" alt="architecture" width="850" height="500">
 </p>
 
 ### Data 

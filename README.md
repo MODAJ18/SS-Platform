@@ -110,7 +110,7 @@ The main tools, languages, and frameworks used in this project are:
 
 `Languages`: Python, Scala, SQL, Javascript, Typescript, HTML, CSS.
 
-`Tools`: MySQL, PostgreSQL, MongoDB, Apache Nifi, Apache Kafka, HDFS, Apache Hive, Apache Cassandra, Crontab. 
+`Tools`: MySQL, PostgreSQL, MongoDB, Apache Nifi, Apache Kafka, HDFS, Apache Hive, Apache Cassandra, Crontab, YARN, Zookeeper. 
 
 `Frameworks`: Node.js, Angular 2, Apache Spark, Spark Structured Streaming, Spark MLlib, FastAPI.
 

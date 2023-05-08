@@ -7,9 +7,11 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+
+<!-- Introduction -->
 # SS-Platform
 
-A Platform enabling analytics and machine learning forecasting of large-scale retail data from mega stores, integrating different sources of operational databases and simulated live-feed APIs into a data lake, cataloging and centralizing storage for detailed analysis in a data warehouse, serve data for analytics in BI a dashboard that gets the latest data through a scalable pipeline employed in a lambda architecture.
+This platform allows analytics and machine learning forecasting of large-scale retail data from mega stores by integrating various sources of operational databases and simulated live-feed APIs into a data lake. The platform centralizes storage by cataloging data and facilitates detailed analysis in a data warehouse. The data is processed through a scalable pipeline based on a lambda architecture and served for analytics in a BI dashboard, providing the latest data for the business.
 
 The platform provides users with the ability to monitor their business's sales, sales volume, and revenue over yearly, quarterly, monthly, and daily intervals, enabling them to comprehend historical trends. In addition, the platform offers branch sales, product aggregated performance metrics, and sales forecasting analytics to provide a comprehensive outlook on the business's operational performance.
 
@@ -37,13 +39,15 @@ The platform provides users with the ability to monitor their business's sales, 
   </ol>
 </details>
 
+
+<!-- Architecture and Workflow -->
 ## Architecture and Workflow
 
 ### Main Architecture
 
 the platform can be broken down to three parts: 
-1- Data Pipeline based on lambda architecture, having a batch as well as a speed layer.
-2- Data lake and and data warehouse that are updated and added on to through the pipeline, both being appropriately prepared in partitions, with the data warehouse being composed of three data marts.
+1- Data pipeline based on lambda architecture, having a batch layer as well as a speed layer.
+2- Data lake and and data warehouse that are updated and added on to through the pipeline, both being appropriately prepared in partitions, with the data warehouse being composed of several data marts.
 3- Full-stack web application built with node js and angular, to visualize and analyse the data served by the pipeline.
 
 -- <picture of architecture>
@@ -79,7 +83,7 @@ The data lake serves to store raw data in its various forms, while data warehous
 
 In this project, Spark is the tool chosen for the batch layer. Batch scripts are written in Scala and compiled with sbt build tool. Multiple batch layer jobs are executed periodically throughout the day, where the batch layer jobs are retrieving raw data from HDFS and performing required tasks, and then saving the results in the Serving layer. Crontab is the main tool for scheduling various batch jobs.
 
-for the speed layer, spark structured streaming is utilized. Codes are written in Scala. streams layer serves to supplement the batch layer to immediately process and transform online transactions from customers orders, extracted data directly from kafka, processing it, and storing it in cassandra tables to serve near real-time data for the serving layer. 
+for the speed layer, spark structured streaming is utilized. the script is written in Scala. streams layer serves to supplement the batch layer to immediately process and transform online transactions from customers orders, extracted data directly from kafka, processing it, and storing it in cassandra tables to serve near real-time data for the serving layer. 
 
 Several Tasks performed by the pipeline:
 - preparing product sentiment scores, ratings, and sales information.
@@ -91,7 +95,6 @@ Several Tasks performed by the pipeline:
 
 Most tasks are performed by the batch layer, with the speed layer being employed for necessary processing of oncoming customer orders.
 
-
 ### Web Applicaiton - BI Dashboard
 
 Node js is the framework of choosing for the backend, it fetches data from the serving layer (cassandra) and pushes it into an API for use by the frontend software. A dashboard application showcasing sections for order history, branch sales, product performance, and forecasted sales is built using angular 2 framework, in addition to several components, such as chart js, and angular material.
@@ -100,6 +103,8 @@ Node js is the framework of choosing for the backend, it fetches data from the s
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+  
+<!-- SS-Platform Components -->
 ## SS-Platform Components
 The main tools, languages, and frameworks used in this project are:
 
@@ -111,6 +116,7 @@ The main tools, languages, and frameworks used in this project are:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+  
 <!-- LICENSE -->
 ## License
 

@@ -1,0 +1,56 @@
+<div id="d-container">
+    <section class="dash-fig" id="d-filters">
+        <button class="filter-button" 
+                (mouseenter)="filterEnter('year')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_yTrigger]="filterHover"
+                (click)="changeByYear();">yearly</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('quarter')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_qTrigger]="filterHover"
+                (click)="changeByQuarter();">quarterly</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('month')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_mTrigger]="filterHover"
+                (click)="changeByMonth();">month</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('day')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_dTrigger]="filterHover"
+                (click)="changeByDay();">day</button>
+        <!-- <div>d-filters OH</div> -->
+    </section>
+    <section class="dash-fig" id="d-KPIs">
+        <!-- <div>d-KPIs</div> -->
+        <div class="dash-kpi"
+             (mouseenter)="KPIEnter('KPI1')" 
+             (mouseleave)="KPILeave('off')"
+             [@KPIHover1_Trigger]="KPIHover">
+            <div class="dash-kpi-title">Total Profit Earned <span style="font-size: 9px;">(last period)</span></div>
+            <div class="dash-kpi-value">${{ last_profit_total }}</div>
+        </div>
+        <div class="dash-kpi"
+             (mouseenter)="KPIEnter('KPI2')" 
+             (mouseleave)="KPILeave('off')"
+             [@KPIHover2_Trigger]="KPIHover">
+            <div class="dash-kpi-title">Total Quantities Sold <span style="font-size: 9px;">(last period)</span></div>
+            <div class="dash-kpi-value">{{ last_quantity_total }}</div>
+        </div>
+    </section>
+    
+    <section class="dash-fig" id="d-graph-sale">
+        <div id="dgs-container">
+            <canvas id="order_history_sales"></canvas>
+        </div>
+    </section>
+    <section class="dash-fig" id="d-graph-quantity">
+        <div id="dgq-container">
+            <canvas id="order_history_quantity"></canvas>
+        </div>
+    </section>
+    <!-- <section class="dash-fig" id="d-graph-profit">
+        <div>d-graph-profit</div>
+    </section> -->
+</div>

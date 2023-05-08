@@ -1,0 +1,19 @@
+#d-main-body {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 17% 83%;
+    height: 100%;
+}
+
+app-body-nav-page-analytics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11%;
+}
+
+#app-body-dash-page-analytics {
+    background-color: #33465b;
+}
+

@@ -1,0 +1,21 @@
+
+<section class="icon">
+    <a (mouseenter)="iconEnter('analytics')" 
+       (mouseleave)="iconLeave('off')" 
+       [routerLink]="['/analytics']"
+       [@menuIconHover]="iconHover">
+        <img class="header-icon" [src]="analytics_icon_path" />
+    </a>
+</section>
+
+<div class="title">
+    {{ header_title }}
+</div>
+
+<section class="item">
+    <div (mouseenter)="mouseEnter('on')" 
+         (mouseleave)="mouseLeave('off')" 
+         [@menuHover]="menuHover"><a style="text-decoration: none;"
+                                     href="https://www.linkedin.com/in/mohammad-almasri-964867197/">LinkedIn</a></div>
+</section>
+

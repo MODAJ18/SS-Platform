@@ -1,0 +1,15 @@
+.body-text {
+    position: relative;
+    top: 35%;
+    text-align: center;
+}
+
+.body-main-text {
+    font-size: 34px;
+}
+
+.body-sub-text {
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: lighter;
+}

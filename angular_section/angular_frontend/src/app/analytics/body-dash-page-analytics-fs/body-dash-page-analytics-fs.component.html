@@ -1,0 +1,48 @@
+<div id="d-container">
+    <section class="dash-fig" id="d-filters">
+        <button class="filter-button"
+                (mouseenter)="filterEnter('year')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_yTrigger]="filterHover"
+                (click)="changeNextYear();">Next year</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('quarter')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_qTrigger]="filterHover"
+                (click)="changeNextQuarter();">Next quarter</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('month')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_mTrigger]="filterHover"
+                (click)="changeNextMonth();">Next month</button>
+    </section>
+
+    <section class="dash-fig" id="d-KPIs">
+        <!-- <div>d-KPIs</div> -->
+        <div class="dash-kpi"
+             (mouseenter)="KPIEnter('KPI1')" 
+             (mouseleave)="KPILeave('off')"
+             [@KPIHover1_Trigger]="KPIHover">
+            <div class="dash-kpi-title">Estimated Profit</div>
+            <div class="dash-kpi-value">${{ estimated_total_profit }}</div>
+        </div>
+        <div class="dash-kpi"
+             (mouseenter)="KPIEnter('KPI2')" 
+             (mouseleave)="KPILeave('off')"
+             [@KPIHover2_Trigger]="KPIHover">
+            <div class="dash-kpi-title">Estimated Customer Count</div>
+            <div class="dash-kpi-value">{{ estimated_total_customer_count }}</div>
+        </div>
+    </section>
+    
+    <section class="dash-fig" id="d-future-sale">
+        <div id="dfs-container">
+            <canvas id="future_sales"></canvas>
+        </div>
+    </section>
+    <section class="dash-fig" id="d-customer-count">
+        <div id="dcs-container">
+            <canvas id="future_customer_num"></canvas>
+        </div>
+    </section>
+</div>

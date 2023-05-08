@@ -1,0 +1,41 @@
+.sect {
+    background-color: #457b9d6b;
+    margin: 5px;
+    padding: 25px 20px 5px 20px;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.sect > div {
+    font-size: 20px;
+}
+
+.sect > p {
+    margin-top: -10px;
+    font-weight: normal;
+    color: #c7cac7;
+    height: 20%;
+    font-size: 16px;
+}
+
+.sect > a {
+  font: 12px;
+  text-decoration: none;
+  background-color: #bb8718;
+  color: #f1faee;
+  padding: 10px 60px;
+  border-radius: 25% / 100%;
+  width: 50px;
+  margin-top: -5%;
+}
+
+.sect > a:hover {
+    background-color: #b8861b;
+}
+
+.sect img {
+    width: 10%;
+}

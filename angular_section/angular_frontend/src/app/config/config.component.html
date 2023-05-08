@@ -1,0 +1,106 @@
+<h3>Get configuration from JSON file</h3>
+
+<div>
+    <button type="button" style="background-color: rgb(85, 85, 85);" 
+            (click)="clear(); getOrderHistoryData()">get Orders</button>
+    <button type="button" style="background-color: rgb(85, 85, 85);" 
+            (click)="clear(); getBranchSalesData()">get Branch Sales</button>
+    <button type="button" style="background-color: rgb(85, 85, 85);" 
+            (click)="clear(); getCustomerPreferenceSalesData()">get Customer Preference Sales</button>
+    <button type="button" style="background-color: rgb(85, 85, 85);" 
+            (click)="clear(); getProductPerformanceData()">get product performance data</button>
+            <button type="button" style="background-color: rgb(85, 85, 85);" 
+            (click)="clear(); getFutureSalesData()">get Future Sales data</button>
+    <!-- <span *ngIf="config">
+        <p>category: "{{config}}"</p>
+        <p>product name: "{{config.product}}"</p>
+    </span> -->
+
+  <!-- 1 -->
+  <div *ngIf="orders">
+    <!-- <div>{{ res }}</div> -->
+    <br>
+    <!-- <span *ngFor="let res_i of res">
+      <p>{{ res_i }}</p>
+      <hr>
+    </span> -->
+    
+    <!-- <div>{{ res2 }}</div>
+    <span *ngFor="let res_i of res2">
+      <p>{{ res_i }}</p>
+      <hr>
+    </span> -->
+
+
+    <!-- <span *ngFor="let order of orders">
+        <p>category: "{{order.category}}"</p>
+        <p>sub-category: "{{order.sub_category}}"</p>
+        <p>year: "{{order.year}}"</p>
+        <p>quarter: "{{order.quarter}}"</p>
+        <p>month: "{{order.month}}"</p>
+        <p>day: "{{order.day}}"</p>
+        <p>sales: "{{order.sales}}"</p>
+        <p>quantity: "{{order.quantity}}"</p>
+        <p>profit: "{{order.profit}}"</p>
+        <hr>
+    </span> -->
+  </div>
+
+  <!-- 2 -->
+  <!-- <div *ngIf="branch_sales">
+    <span *ngFor="let branch_sale of branch_sales">
+        <p>location id: "{{ branch_sale.l_row_id }}"</p>
+        <p>region: "{{ branch_sale.region }}"</p>
+        <p>country: "{{ branch_sale.country }}"</p>
+        <p>city: "{{ branch_sale.city }}"</p>
+        <p>year: "{{ branch_sale.year }}"</p>
+        <p>quarter: "{{ branch_sale.quarter }}"</p>
+        <p>month: "{{ branch_sale.month }}"</p>
+        <p>day: "{{ branch_sale.day }}"</p>
+        <p>overall sales: "{{ branch_sale.overall_sales }}"</p>
+        <p>overall profit: "{{ branch_sale.overall_profit }}"</p>
+        <p>quantity total: "{{ branch_sale.quantity_total }}"</p>
+        <hr>
+    </span>
+  </div> -->
+
+  <!-- 3 -->
+  <!-- <div *ngIf="customer_preference_sales">
+    <span *ngFor="let customer_preference_sale of customer_preference_sales">
+        <p>product category: "{{ customer_preference_sale.category }}"</p>
+        <p>product sub-category: "{{ customer_preference_sale.sub_category }}"</p>
+        <p>year: "{{ customer_preference_sale.year }}"</p>
+        <p>quarter: "{{ customer_preference_sale.quarter }}"</p>
+        <p>month: "{{ customer_preference_sale.month }}"</p>
+        <p>day: "{{ customer_preference_sale.day }}"</p>
+        <p>number of customers: "{{ customer_preference_sale.num_customers }}"</p>
+        <p>overall sales: "{{ customer_preference_sale.overall_sales }}"</p>
+        <p>overall_profit "{{ customer_preference_sale.overall_profit }}"</p>
+        <p>quantity total: "{{ customer_preference_sale.quantity_total }}"</p>
+        <hr>
+    </span>
+  </div> -->
+
+  <!-- 4 -->
+  <!-- <div *ngIf="product_performance">
+    <span *ngFor="let product_performance_i of product_performance">
+        <p>row id: "{{ product_performance_i.row_id }}"</p>
+        <p>product name: "{{ product_performance_i.product_name }}"</p>
+        <p>category: "{{ product_performance_i.category }}"</p>
+        <p>sub-category: "{{ product_performance_i.sub_category }}"</p>
+        <p>year: "{{ product_performance_i.year }}"</p>
+        <p>quarter: "{{ product_performance_i.quarter }}"</p>
+        <p>month: "{{ product_performance_i.month }}"</p>
+        <p>day: "{{ product_performance_i.day }}"</p>
+        <p>overall sales: "{{ product_performance_i.overall_sales }}"</p>
+        <p>overall profit "{{ product_performance_i.overall_profit }}"</p>
+        <p>product price: "{{ product_performance_i.product_price }}"</p>
+        <p>product rating: "{{ product_performance_i.product_rating }}"</p>
+        <p>quantity total: "{{ product_performance_i.quantity_total }}"</p>
+        <p>review perception: "{{ product_performance_i.review_perception }}"</p>
+        <p>sentiment score: "{{ product_performance_i.sentiment_score }}"</p>
+        <hr>
+    </span>
+  </div> -->
+
+</div>

@@ -1,0 +1,25 @@
+/* LAYOUT */
+.layout {
+    display: grid;
+    grid-template-rows: 7% 88% 5%;
+    height: 1500px;
+    background-image: url("../../../assets/main_page_image.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+}
+
+/* COMPONENT STYLES */
+app-header-page-analytics {
+    width: 99.5%;
+    color: #f1faee;
+    padding: 5px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001d3dad;
+}

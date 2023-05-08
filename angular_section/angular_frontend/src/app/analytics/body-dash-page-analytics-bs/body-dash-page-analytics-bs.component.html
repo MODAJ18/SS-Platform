@@ -1,0 +1,106 @@
+<div id="d-container">
+    <section class="dash-fig" id="d-filters">
+        <button class="filter-button"
+                (mouseenter)="filterEnter('all')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_allTrigger]="filterHover"
+                (click)="changeAll();">all</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('year')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_yTrigger]="filterHover"
+                (click)="changeByYear();">last year</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('quarter')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_qTrigger]="filterHover"
+                (click)="changeByQuarter();">last quarter</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('month')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_mTrigger]="filterHover"
+                (click)="changeByMonth();">last month</button>
+    </section>
+    
+    <section class="dash-fig" id="d-top-5-branches">
+        <div id="dt5b-container">
+            <canvas id="bs_top5branches"></canvas>
+        </div>
+    </section>
+    <section class="dash-fig" id="d-bottom-5-branches">
+        <div id="db5b-container">
+            <canvas id="bs_top5cities"></canvas>
+        </div>
+    </section>
+    <section class="dash-fig" id="d-all-branches-table">
+        <div>
+            <table mat-table [dataSource]="dataSource"  matSort (matSortChange)="announceSortChange($event)">
+
+                <ng-container matColumnDef="branch_id">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Branch ID</th>
+                  <td mat-cell *matCellDef="let element"> {{element.l_row_id}} </td>
+                </ng-container>
+            
+                <ng-container matColumnDef="region">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Region</th>
+                  <td mat-cell *matCellDef="let element"> {{element.region}} </td>
+                </ng-container>
+            
+                <ng-container matColumnDef="country">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Country</th>
+                  <td mat-cell *matCellDef="let element"> {{element.country}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="city">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">City</th>
+                    <td mat-cell *matCellDef="let element"> {{element.city}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="year">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Year</th>
+                    <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="quarter">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Quarter</th>
+                    <td mat-cell *matCellDef="let element"> {{element.quarter}} </td>
+                </ng-container>
+                
+                <ng-container matColumnDef="month">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by name">Month</th>
+                    <td mat-cell *matCellDef="let element"> {{element.month}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="day">
+                    <th mat-header-cell *matHeaderCellDef style="font-size: 10px;" mat-sort-header sortActionDescription="Sort by number">Day</th>
+                    <td mat-cell *matCellDef="let element"> {{element.day}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="overall_sales" >
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number">Sales</th>
+                    <td mat-cell *matCellDef="let element"> {{element.overall_sales | number:'1.2-2' }} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="overall_profit">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number">Profit</th>
+                    <td mat-cell *matCellDef="let element"> {{element.overall_profit | number:'1.2-2' }} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="quantity_total">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number">Quantity</th>
+                    <td mat-cell *matCellDef="let element"> {{element.quantity_total }} </td>
+                </ng-container>
+            
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+            
+            <mat-paginator 
+                            [pageSizeOptions]="[10]"
+                            showFirstLastButtons
+                            aria-label="Select page of branch sales">
+            </mat-paginator>
+        
+        </div>
+    </section>
+</div>

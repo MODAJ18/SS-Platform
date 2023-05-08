@@ -1,0 +1,35 @@
+<div id="d-container">
+    <section class="dash-fig" id="d-filters">
+        <button class="filter-button"
+                (mouseenter)="filterEnter('all')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_allTrigger]="filterHover"
+                (click)="changeAll();">all</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('year')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_yTrigger]="filterHover"
+                (click)="changeByYear();">last year</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('quarter')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_qTrigger]="filterHover"
+                (click)="changeByQuarter();">last quarter</button>
+        <button class="filter-button"
+                (mouseenter)="filterEnter('month')" 
+                (mouseleave)="filterLeave('off')" 
+                [@filterHover_mTrigger]="filterHover"
+                (click)="changeByMonth();">last month</button>
+    </section>
+    
+    <section class="dash-fig" id="d-top-5-products">
+        <div id="dt5p-container">
+            <canvas id="pp_top5products"></canvas>
+        </div>
+    </section>
+    <section class="dash-fig" id="d-product-category-perfomance">
+        <div id="db5p-container">
+            <canvas id="pp_productCategories"></canvas>
+        </div>
+    </section>
+</div>

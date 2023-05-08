@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun May 07 23:22:07 EET 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0187-f7e0-f183-00000b35e868 
+on database directory /home/modaj/Workspace/Projects/DE_Sales_Data/angular_sect/angular_frontend/metastore_db with class loader sun.misc.Launcher$AppClassLoader@5e025e70 
+Loaded from file:/home/modaj/Tools/apache-hive-2.3.2-bin/lib/derby-10.10.2.0.jar
+java.vendor=Private Build
+java.runtime.version=1.8.0_362-8u362-ga-0ubuntu1~22.04-b09
+user.dir=/home/modaj/Workspace/Projects/DE_Sales_Data/angular_sect/angular_frontend
+os.name=Linux
+os.arch=amd64
+os.version=5.19.0-41-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

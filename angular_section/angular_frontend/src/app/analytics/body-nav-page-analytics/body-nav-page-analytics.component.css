@@ -1,0 +1,22 @@
+div#empty-sect {
+    background-color: #001d3dad;
+    width: 100%;
+    height: 10%;
+    margin-bottom: -6.5%;
+}
+
+.nav-sect {
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+.nav-sect a {
+    text-decoration-line: none;
+}
+.nav-sect a:hover {
+    color: #ffd60a;
+}
+
+.active-sect {
+    color: #ffd60a;
+}

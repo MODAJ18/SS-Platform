@@ -1,0 +1,23 @@
+.footer-row > * {
+    text-align: center;
+}
+
+.footer-row > div {
+    font-size: 14px;;
+    flex-grow: 1;
+    background-color: antiquewhite;
+}
+.footer-row > div:hover {
+    color: rgb(153, 152, 152);
+}
+
+
+.footer-row > section {
+    flex-grow: 40;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

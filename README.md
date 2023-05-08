@@ -51,20 +51,20 @@ the platform can be broken down to three parts:
 3- Full-stack web application built with node js and angular, to visualize and analyse the data served by the pipeline.
 
 <p float="left" align="center">
-  <img src="Extras/images/Architecture.png" alt="architecture" width="350" height="300">
+  <img src="Extras/images/Architecture.png" alt="architecture" width="850" height="400">
 </p>
 
 ### Data 
 For this project, data containing superstore information on Kaggle (available at the link: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final) was used to create a traditional transactional database system that includes order sales, product, customer, and location data for a hypothetical business. Additionally, an API feed was built in FastAPI and Apache Nifi to simulate a stream source of online orders and transactions using the same data.
 
 <p float="left" align="center">
-  <img src="Extras/images/raw-data.png" alt="raw-data" width="350" height="300">
+  <img src="Extras/images/raw-data.png" alt="raw-data" width="550" height="300">
 </p>
 <p float="left" align="center">
-  <img src="Extras/images/main-data-er-model.png" alt="main-data-er-model" width="350" height="300">
+  <img src="Extras/images/main-data-er-model.png" alt="main-data-er-model" width="550" height="300">
 </p>
 <p float="left" align="center">
-  <img src="Extras/images/other-data-er-model.png" alt="other-data-er-model" width="350" height="300">
+  <img src="Extras/images/other-data-er-model.png" alt="other-data-er-model" width="450" height="300">
 </p>
 
 Customer sentiments and online perception is also incorporated by scraping relavent information from twitter on different products that the business sells, and then retrieving tweets regarding users talking about the products. 
@@ -103,7 +103,7 @@ Most tasks are performed by the batch layer, with the speed layer being employed
  
 -- <yarn-batch-and-stream-pictures>
 <p float="left" align="center">
-  <img src="Extras/images/yarn-finished-jobs.png" alt="yarn-finished-jobs" width="350" height="300">
+  <img src="Extras/images/yarn-finished-jobs.png" alt="yarn-finished-jobs" width="800" height="400">
 </p>
 
 ### Web Applicaiton - BI Dashboard
@@ -112,19 +112,19 @@ Node js is the framework of choosing for the backend, it fetches data from the s
 
   
 <p float="left" align="center">
-  <img src="Extras/images/webpage-main.png" alt="webpage-main" width="350" height="300">
+  <img src="Extras/images/webpage-main.png" alt="webpage-main" width="750" height="350">
 </p>
 <p float="left" align="center">
-  <img src="Extras/images/webpage-oh.png" alt="webpage-oh" width="350" height="300">
+  <img src="Extras/images/webpage-oh.png" alt="webpage-oh" width="750" height="350">
 </p>
 <p float="left" align="center">
-  <img src="Extras/images/webpage-bs.png" alt="ebpage-bs" width="350" height="300">
+  <img src="Extras/images/webpage-bs.png" alt="ebpage-bs" width="750" height="350">
 </p>
 <p float="left" align="center">
-  <img src="Extras/images/webpage-pp.png" alt="webpage-pp" width="350" height="300">
+  <img src="Extras/images/webpage-pp.png" alt="webpage-pp" width="750" height="350">
 </p>
 <p float="left" align="center">
-  <img src="Extras/images/webpage-fs.png" alt="webpage-fs" width="350" height="300">
+  <img src="Extras/images/webpage-fs.png" alt="webpage-fs" width="750" height="350">
 </p>
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -46,9 +46,11 @@ The platform provides users with the ability to monitor their business's sales, 
 ### Main Architecture
 
 the platform can be broken down to three parts: 
-1- Data pipeline based on lambda architecture, having a batch layer as well as a speed layer.
-2- Data lake and and data warehouse that are updated and added on to through the pipeline, both being appropriately prepared in partitions, with the data warehouse being composed of several data marts.
-3- Full-stack web application built with node js and angular, to visualize and analyse the data served by the pipeline.
+<ol>
+  <li>Data pipeline based on lambda architecture, having a batch layer as well as a speed layer.</li>  
+  <li>Data lake and and data warehouse that are updated and added on to through the pipeline, both being appropriately prepared in partitions, with the data warehouse being composed of several data marts.</li>  
+  <li>Full-stack web application built with node js and angular, to visualize and analyse the data served by the pipeline.</li>  
+</ol>
 
 <p float="left" align="center">
   <img src="Extras/images/Architecture.png" alt="architecture" width="850" height="500">
